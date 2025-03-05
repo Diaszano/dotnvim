@@ -34,7 +34,7 @@ return {
       "mfussenegger/nvim-dap",
     },
     build = function()
-      vim.cmd.GoInstallDeps()
+      vim.cmd [[silent! GoInstallDeps]]
     end,
     config = function ()
       require("configs.gopher")
